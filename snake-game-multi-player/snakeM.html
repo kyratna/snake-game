@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>KY Snake Game</title>
+		<style>
+			#mycanvas{
+				background-image: url("Assets/bg.jpg");
+				border: 10px solid green;
+      			display: grid;
+			}
+			#can{
+				height: 120vh;
+			    width: 130vw;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    margin: 2px;
+			    background-color: black;
+			}
+			body h3{
+				color: black;
+				margin: 1px;
+				padding: 2px;
+				align-content: center;
+
+			}
+
+			html {
+    			zoom: 0.81;
+    			-moz-transform: scale(0.81);
+    			-webkit-transform: scale(0.81);
+    			transform: scale(0.81);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2>Welcome to Multiplayer Snake Game, Start the game. Use arrow keys for Black Snake and W,A,S,D for Blue Snake. Don't let snakes bite itself or touch the boundries.</h2>
+		</div>
+		<br>
+		<br>
+		<div id="can">
+			<canvas id="mycanvas">  </canvas>
+		</div>
+		<script src="snakeM.js"> </script>
+	</body>
+</html>
